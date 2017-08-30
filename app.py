@@ -17,7 +17,7 @@ def hello():
         visits = "<i>Can't connect to Redis, counter disabled</i>"
 
     # Markup for response.
-    html = "<h3>Hello Docker!</h3>" \
+    html = "<h3>Hi Docker!</h3>" \
            "<b>Visits:</b> {visits}"
 
     # Replace variables from template with actual values.

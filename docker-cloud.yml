@@ -12,6 +12,7 @@ web:
   # Make it possible for app.py to call Redis host by simply calling http://redis:6379
   links:
     - redis
+
 redis:
   # Build redis container from official Redis image.
   image: 'redis:latest'

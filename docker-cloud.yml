@@ -1,10 +1,17 @@
 web:
   # Replace username/repo:tag with your name and image details.
   image: 'trekhleb/hello-docker:latest'
+
+  # Redeploy web app in case if it's image is updated.
   autoredeploy: true
+
+  # Expose port 80 of the container and map it to port 80 of host machine (droplet)
   ports:
     - '80:80'
+
+  # Make it possible for app.py to call Redis host by simply calling http://redis:6379
   links:
     - redis
 redis:
+  # Build redis container from official Redis image.
   image: 'redis:latest'

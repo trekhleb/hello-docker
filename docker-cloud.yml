@@ -1,11 +1,10 @@
 web:
+  # Replace username/repo:tag with your name and image details.
   image: 'trekhleb/hello-docker:latest'
+  autoredeploy: true
   ports:
     - '80:80'
-  autoredeploy: true
   links:
     - redis
 redis:
   image: 'redis:latest'
-  ports:
-    - '6379:6379'

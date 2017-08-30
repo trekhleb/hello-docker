@@ -1,30 +1,15 @@
-version: 3
+version: '3'
 services:
   web:
-    # replace username/repo:tag with your name and image details
-    image: trekhleb/hello-docker:latest
-    deploy:
-      replicas: 5
-      restart_policy:
-        condition: on-failure
-      resources:
-        limits:
-          cpus: 0.1
-          memory: 50M
+    # Replace username/repo:tag with your name and image details.
+    image: 'trekhleb/hello-docker:latest'
     ports:
-      - 80:80
+      - '80:80'
     networks:
-      - webnet
+      - 'webnet'
   redis:
     image: redis
-    ports:
-      - 6379:6379
-    volumes:
-      - ./data:/data
-    deploy:
-      placement:
-        constraints: [node.role == manager]
     networks:
-      - webnet
+      - 'webnet'
 networks:
   webnet:

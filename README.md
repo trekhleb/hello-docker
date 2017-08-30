@@ -4,4 +4,4 @@
 
 This is an example Docker project that is used as illustration for automated continuous delivery flow with DockerCloud and DigitalOcean.
 
-[Read full article](https://medium.com/@trekhleb/docker-whale-in-digital-ocean-or-automated-continuous-delivery-flow-for-simple-projects-fbfb2c26bf14) on Medium.
+#### [Read full article](https://medium.com/@trekhleb/docker-whale-in-digital-ocean-or-automated-continuous-delivery-flow-for-simple-projects-fbfb2c26bf14) on Medium.
